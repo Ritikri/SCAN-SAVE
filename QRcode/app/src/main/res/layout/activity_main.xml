@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    tools:context=".MainActivity">
+    <SurfaceView
+        android:id="@+id/cameraPreview"
+        android:layout_marginTop="50dp"
+        android:layout_width="300dp"
+        android:layout_marginLeft="50dp"
+        android:layout_height="480px" />
+
+
+    <Button
+        android:id="@+id/btnAdd_Contact"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+android:onClick="btnAdd_Contact_onClick"
+        android:text="Add Contact" />
+
+    <EditText
+        android:id="@+id/txtFirstname"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_below="@+id/cameraPreview"
+
+
+      android:layout_marginLeft="150dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="FirstName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:hint="Phone"
+        android:layout_marginLeft="150dp"
+        android:id="@+id/txtphone"
+       android:layout_marginTop="310dp"
+       />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint="Email"
+        android:layout_marginLeft="150dp"
+        android:id="@+id/txtemail"
+       android:layout_below="@+id/txtphone"
+        android:layout_marginTop="24dp"/>
+
+
+
+</RelativeLayout>
